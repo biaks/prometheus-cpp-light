@@ -14,7 +14,7 @@ namespace prometheus {
     std::string help_;
 
   public:
-    Builder& Labels(const std::map<const std::string, const std::string>& labels) {
+    Builder& Labels(const std::map<std::string, std::string>& labels) {
       labels_ = labels;
       return *this;
     }
